@@ -52,3 +52,17 @@ body {
     line-height: normal;
     font-variant: small-caps;
 }
+
+.footer {
+    background: #B8AFA9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+
+.footer__right {
+    display: flex;
+    gap: 35px;
+}
