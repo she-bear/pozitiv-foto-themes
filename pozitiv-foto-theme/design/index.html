@@ -12,6 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+    <!-- nanogallery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- -->
 </head>
 
 <body>
@@ -53,17 +58,40 @@
 
     <section class="portfolio center">
         <h2 class="title">Портфолио</h2>
-        <div class="row">
-            <img src="img/portfolio_1.jpg" alt="photo 1">
-            <img src="img/portfolio_2.jpg" alt="photo 2">
-        </div>
-        <div class="row">
-            <img src="img/portfolio_3.jpg" alt="photo 3">
-            <img src="img/portfolio_4.jpg" alt="photo 4">
-        </div>
-        <div class="row">
-            <img src="img/portfolio_5.jpg" alt="photo 5">
-            <img src="img/portfolio_6.jpg" alt="photo 6">
+        <!-- nanogallery2 -->
+        <div ID="nanogallery_portfolio" data-nanogallery2='{
+            "galleryMosaic": [
+                { "w": 1, "h": 1, "c": 1, "r": 1 },
+                { "w": 2, "h": 1, "c": 2, "r": 1 },
+                { "w": 2, "h": 1, "c": 1, "r": 2 },
+                { "w": 1, "h": 1, "c": 3, "r": 2 },
+                { "w": 1, "h": 1, "c": 1, "r": 3 },
+                { "w": 2, "h": 1, "c": 2, "r": 3 },
+                { "w": 2, "h": 1, "c": 1, "r": 4 },
+                { "w": 1, "h": 1, "c": 3, "r": 4 }
+                ],
+            "itemsBaseURL": "img/",
+            "thumbnailWidth": "410",
+            "thumbnailHeight": "560",
+            "galleryDisplayMode": "rows",
+            "galleryMaxRows": 1,
+            "thumbnailLabel": {
+            "position": "overImageOnBottom"
+            },
+            "thumbnailGutterWidth": 20,
+            "thumbnailGutterHeight": 20,
+            "thumbnailBorderHorizontal": 0,
+            "thumbnailBorderVertical": 0,
+            "thumbnailAlignment": "center",
+            "thumbnailLabel": { "display" : false },
+            "thumbnailOpenImage": true
+        }'>
+            <a href="portfolio_1.jpg" data-ngthumb="portfolio_1.jpg" data-ngdesc="">photo 1</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_3.jpg" data-ngthumb="portfolio_3.jpg" data-ngdesc="">photo 3</a>
+            <a href="portfolio_4.jpg" data-ngthumb="portfolio_4.jpg" data-ngdesc="">photo 4</a>
+            <a href="portfolio_5.jpg" data-ngthumb="portfolio_5.jpg" data-ngdesc="">photo 5</a>
+            <a href="portfolio_6.jpg" data-ngthumb="portfolio_6.jpg" data-ngdesc="">photo 6</a>
         </div>
     </section>
 
