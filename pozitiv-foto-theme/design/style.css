@@ -128,7 +128,6 @@ body {
     justify-content: space-between;
 }
 
-/* Скрыть количество изображений в карусели */
-#nanogallery_actual .nGY2GThumbnailIconsFullThumbnail {
-    display: none;
+#nanogallery_actual .nGY2Navigationbar {
+    display: none !important;
 }
