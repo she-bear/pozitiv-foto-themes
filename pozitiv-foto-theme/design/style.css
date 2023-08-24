@@ -127,3 +127,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+#nanogallery_actual .nGY2Navigationbar {
+    display: none !important;
+}
