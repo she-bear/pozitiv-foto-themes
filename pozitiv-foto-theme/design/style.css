@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'STIX Two Text', serif;
+}
+
+.center {
+    padding-left: calc(50% - 645px);
+    padding-right: calc(50% - 645px);
+}
+
+.header {
+    background: #B8AFA9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 9px;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    background: #EBEBEB;
+    width: 100%;
+    height: 2px;
+    bottom: 6px;
+    right: 0px;
+    position: absolute;
+}
+
+.header__right {
+    display: flex;
+    gap: 64px;
+}
+
+.header__link {
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 4px;
+}
+
+.up__spacing {
+    letter-spacing: 1.5px;
+}
+
+.med__spacing {
+    letter-spacing: 0.9px;
+}
+
+.footer {
+    background: #B8AFA9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 26px;
+}
+
+.footer__right {
+    display: flex;
+    gap: 35px;
+}
+
+.about {
+    padding-top: 36px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.title {
+    color: #4A4949;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.text__col {
+    column-count: 2;
+    column-gap: 30px;
+}
+
+.text {
+    color: #4A4949;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.actual__photo {
+    background-color: #F1F1F0;
+    padding-top: 36px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.portfolio {
+    background-color: #FBF6F0;
+    padding-top: 36px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#nanogallery_actual .nGY2Navigationbar {
+    display: none !important;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотомастерская ПозитивЪ</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+    <!-- nanogallery -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet"
+        type="text/css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <!-- -->
+</head>
+
+<body>
+    <header class="header center">
+        <div class="header__left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
+        </div>
+        <nav class="header__right">
+            <a href="#" class="header__link up__spacing">Галереи</a>
+            <a href="#" class="header__link up__spacing">Серии</a>
+            <a href="#" class="header__link med__spacing">Контакты</a>
+            <a href="#" class="header__link">О нас</a>
+        </nav>
+    </header>
+
+    <section class="about center">
+        <h1 class="title">Фотомастерская ПозитивЪ</h1>
+        <div class="text__col">
+            <p class="text">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь
+                от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так
+                счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не
+                мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.
+            </p>
+        </div>
+        <div ID="nanogallery_actual" data-nanogallery2='{
+            "galleryMosaic": [
+                { "w": 1, "h": 1, "c": 1, "r": 1 }
+                ],
+            "itemsBaseURL": "img/",
+            "thumbnailWidth": "1290",
+            "thumbnailHeight": "700",
+            "galleryDisplayMode": "pagination",
+            "galleryPaginationMode": "dots",
+            "galleryMaxRows": 1,
+            "thumbnailLabel": {
+            "position": "overImageOnBottom"
+            },
+            "thumbnailOpenInLightox": false,
+            "thumbnailGutterWidth": 20,
+            "thumbnailGutterHeight": 20,
+            "thumbnailBorderHorizontal": 0,
+            "thumbnailBorderVertical": 0,
+            "thumbnailAlignment": "center",
+            "thumbnailLabel": { "display" : false },
+            "displayBreadcrumb": false,
+            "breadcrumbAutoHideTopLevel": false,
+            "thumbnailSliderDelay": 10000,
+            "thumbnailOpenImage": true
+        }'>
+            <a href="about_image.jpg" data-ngthumb="about_image.jpg" data-ngdesc="">photo 1</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_3.jpg" data-ngthumb="portfolio_3.jpg" data-ngdesc="">photo 3</a>
+            <a href="portfolio_4.jpg" data-ngthumb="portfolio_4.jpg" data-ngdesc="">photo 4</a>
+            <a href="portfolio_5.jpg" data-ngthumb="portfolio_5.jpg" data-ngdesc="">photo 5</a>
+            <a href="portfolio_6.jpg" data-ngthumb="portfolio_6.jpg" data-ngdesc="">photo 6</a>
+        </div>
+    </section>
+
+    <section class="actual__photo center">
+        <h2 class="title">Актуальное фото</h2>
+        <div class="text__col">
+            <p class="text">Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь
+                от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так
+                счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не
+                мог бы я сделать, а никогда не был таким большим художником, как в эти минуты.
+            </p>
+        </div>
+        <img src="img/actual_image.jpg" alt="about image">
+    </section>
+
+    <section class="portfolio center">
+        <h2 class="title">Портфолио</h2>
+        <!-- nanogallery2 -->
+        <div ID="nanogallery_portfolio" data-nanogallery2='{
+            "itemsBaseURL": "img/",
+            "thumbnailWidth": "auto",
+            "thumbnailHeight": "560",
+            "galleryDisplayMode": "rows",
+            "galleryMaxRows": 10,
+            "thumbnailLabel": {
+            "position": "overImageOnBottom"
+            },
+            "thumbnailGutterWidth": 20,
+            "thumbnailGutterHeight": 20,
+            "thumbnailBorderHorizontal": 0,
+            "thumbnailBorderVertical": 0,
+            "thumbnailAlignment": "center",
+            "thumbnailLabel": { "display" : false },
+            "thumbnailOpenImage": true
+        }'>
+            <a href="portfolio_1.jpg" data-ngthumb="portfolio_1.jpg" data-ngdesc="">photo 1</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_3.jpg" data-ngthumb="portfolio_3.jpg" data-ngdesc="">photo 3</a>
+            <a href="portfolio_4.jpg" data-ngthumb="portfolio_4.jpg" data-ngdesc="">photo 4</a>
+            <a href="portfolio_5.jpg" data-ngthumb="portfolio_5.jpg" data-ngdesc="">photo 5</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_6.jpg" data-ngthumb="portfolio_6.jpg" data-ngdesc="">photo 6</a>
+            <a href="portfolio_1.jpg" data-ngthumb="portfolio_1.jpg" data-ngdesc="">photo 1</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_4.jpg" data-ngthumb="portfolio_4.jpg" data-ngdesc="">photo 4</a>
+            <a href="portfolio_5.jpg" data-ngthumb="portfolio_5.jpg" data-ngdesc="">photo 5</a>
+            <a href="portfolio_6.jpg" data-ngthumb="portfolio_6.jpg" data-ngdesc="">photo 6</a>
+            <a href="portfolio_3.jpg" data-ngthumb="portfolio_3.jpg" data-ngdesc="">photo 3</a>
+            <a href="portfolio_4.jpg" data-ngthumb="portfolio_4.jpg" data-ngdesc="">photo 4</a>
+            <a href="portfolio_2.jpg" data-ngthumb="portfolio_2.jpg" data-ngdesc="">photo 2</a>
+            <a href="portfolio_5.jpg" data-ngthumb="portfolio_5.jpg" data-ngdesc="">photo 5</a>
+            <a href="portfolio_6.jpg" data-ngthumb="portfolio_6.jpg" data-ngdesc="">photo 6</a>
+            <a href="portfolio_3.jpg" data-ngthumb="portfolio_3.jpg" data-ngdesc="">photo 3</a>
+        </div>
+    </section>
+
+    <footer class="footer center">
+        <div class="footer__left">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" class="header__logo"></a>
+        </div>
+        <nav class="footer__right">
+            <a href="#" class="footer__link"><img src="img/footer_phone.svg" alt="phone logo"></a>
+            <a href="#" class="footer__link"><img src="img/footer_instagram.svg" alt="instagram logo"></a>
+            <a href="#" class="footer__link"><img src="img/footer_500px.svg" alt="500px logo"></a>
+            <a href="#" class="footer__link"><img src="img/footer_behance.svg" alt="behance logo"></a>
+            <a href="#" class="footer__link"><img src="img/footer_vk.svg" alt="vk logo"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>
